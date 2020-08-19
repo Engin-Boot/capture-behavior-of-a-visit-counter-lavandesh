@@ -4,7 +4,7 @@ Scenario: Show patient visits during working days and holidays
 
   Given : The sensor database is working
   
-  When : the predictions of patient visits are requested
+  When : Request the predictions of patient visits
   for particular time period
   (Example - next week, next month)
   
@@ -16,8 +16,7 @@ Scenario: Compute parking slots to reserve for visiting specialists
 
   Given : The hospital is open
 
-  When : Schedule of visiting specialists for the day is
-  pushed or new visit of consultant is added
+  When : Push Schedule of visiting specialists for the day or Add new visit of consultant
 
   Then : Generate a report with number of slots to reserve
   along with time of when to reserve slot
