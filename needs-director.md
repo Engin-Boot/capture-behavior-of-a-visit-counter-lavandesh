@@ -16,8 +16,7 @@ Scenario: Compute parking slots to reserve for visiting specialists
 
   Given : The hospital is open
 
-  When : Schedule of visiting specialists for the day is pushed 
-  or new visit of consultant is added
-  
-  Then : Generate a report with number of slots to reserve along with time of when to reserve slot
+  When : Schedule of visiting specialists for the day is
+  pushed or new visit of consultant is added
 
+  Then : Generate a report with number of slots to reserve along with time of when to reserve slot
