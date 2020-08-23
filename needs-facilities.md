@@ -21,8 +21,8 @@ line graph with error bars, for the duration.
 ## Scenario: Alert when seating capacity is full
 
 - Given : The sensor of 'visit-counter' is working
-fine and connects to the database and syncs
-regularly. There is a in-built method in the
+fine and connects to the database and syncs at regular intervals.
+There is a in-built method in the
 software 'visit-counter' to determine the number
 of seats occupied at any given time.
 

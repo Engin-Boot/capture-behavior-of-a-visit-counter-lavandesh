@@ -23,7 +23,7 @@ past trends of the visits not the predictions)
 
 (Assumption - I am writing this feature in the
 context of 'visit-counter' software, this software
-does not take care of schedules and usual calender stuff)
+does not take care of schedules and usual calender maintenance)
 
 - Given : 'Visit-counter' can import the
   schedule of visits from external software.
