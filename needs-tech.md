@@ -1,17 +1,32 @@
 # Visit-counter technical needs
 
-Scenario: Recover across restarts of the server
-that runs the visit-counter
+Scenario: Recover across restarts of the
+server that runs the visit-counter
 
-  Given : 'visit-counter' and sensor are running and connected to the server
-  and syncs at the intervals of 5 ms
+  - Given : Sensors are running and
+  connects to the server of 'Visit-counter'
+  and syncs at the intervals of 5 sec
   
-  When : Initiate and complete the restart of 'visit-counter'
+  - When : 'Visit-counter' server restarts
+  and re-establishes
+  connection to the sensor.
   
-  Then : 
+  - Then : Sensor checks the timestamp
+  of the last synchronization to the database
+  and if it is different than what it is in local
+  memory then updates the latest count of visiters
+  to server Database.
 
-Scenario: Reconcile counts if the sensor is offline for a while
+Scenario: Reconcile counts if the sensor
+is offline for a while
 
-  Given
-  When
-  Then
+  - Given : Server of 'Visit-counter' is up and running.
+
+  - When : Sensor goes offline
+  and comes back online
+  and send 'setup' request to the server.
+  
+  - Then : Server updates the 'Count'
+  and 'time-stamp' variable of the sensor system
+  by retrieving last count and time-stamp
+  on the server database.
