@@ -13,7 +13,7 @@ past trends of the visits not the predictions)
   - When : Select one of the options in 'Duration'
   and Press 'Get Report' button.
   
-  - Then : Generate a pdf report having shift-wise
+  - Then : Generate a text report having shift-wise
   data of total number of visits, in the form of
   line graph with error bars, for the select
   duration and color-code the day, that is, green

@@ -11,10 +11,10 @@ and syncs at the intervals of 5 sec
 and re-establishes
 connection to the sensor.
 
-- Then : Sensor checks the timestamp
+- Then : Sensor checks the time-stamp
 of the last synchronization to the database
 and if it is different than what it is in local
-memory then updates the latest count of visiters
+memory then updates the latest count of visitors
 to server Database.
 
 Scenario: Reconcile counts if the sensor

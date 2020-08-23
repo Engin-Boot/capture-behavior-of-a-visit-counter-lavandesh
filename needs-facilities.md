@@ -14,7 +14,7 @@ and a 'Get Report' button.
 - When : Select 'next week' option
 in 'Duration' and Press 'Get Report' button.
 
-- Then : Generate a pdf report having
+- Then : Generate a text report having
 shift-wise predictions, in the form of
 line graph with error bars, for the duration.
 
