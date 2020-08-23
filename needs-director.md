@@ -5,7 +5,7 @@
 (Assumption - The director has interest in the
 past trends of the visits not the predictions)
 
-  - Given : The 'visit-counter' UI has a tab 'Total
+- Given : The 'visit-counter' UI has a tab 'Total
   visits' with option to select the 'Duration' like
   'last week', 'last 30 days' and 'last 90 days'
   and a 'Get Report' button.
@@ -25,7 +25,7 @@ past trends of the visits not the predictions)
 context of 'visit-counter' software, this software
 does not take care of schedules and usual calender stuff)
 
-  - Given : 'Visit-counter' can import the
+- Given : 'Visit-counter' can import the
   schedule of visits from external software.
   There is a in-built method in the software
   'visit-counter' to determine the number of
@@ -36,7 +36,7 @@ does not take care of schedules and usual calender stuff)
   slots - number of reserve parking slots for
   next 1 hour) OR when external software notify
   new reservation OR one hour before each visit
-  of specialists. 
+  of specialists.
 
   - Then : Generate a push notification and SMS alert,
   containing the number of slots to reserve
